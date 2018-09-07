@@ -14,11 +14,29 @@ function searchCountries() {
         .then(showCountriesList);
 }
 
+
+function showCountriesList(resp) {
+    countriesList.innerHTML = ''; //Clear prev query/show list
+    resp.forEach(function(item){
+        $('<div>').text(item.name).appendTo(countriesList);  
+             
+        //var liEl = document.createElement('li');                
+        
+    });
+    
+}
+
+/*
 function showCountriesList(resp) {
     countriesList.innerHTML = ''; //Clear prev query/show list
     resp.forEach(function(item){
         var liEl = document.createElement('li');
-        liEl.innerText = item.name;
+        var liEl2 = document.createElement('p');
+        liEl.innerText = item.name; 
+        liEl2.innerText = item.capital;                
         countriesList.appendChild(liEl);
+        countriesList.appendChild(liEl2);
     });
+    
 }
+*/
