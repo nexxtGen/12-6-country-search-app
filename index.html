@@ -11,24 +11,22 @@
 <body> 
     <header class="t-header">
             <main>
-                <div id="container" class="search">
-                      <form action="">
-                        <img src="http://pngimg.com/uploads/earth/earth_PNG15.png"><br>
-                        <input type="text" id="country-name" value="Country Name"><br>                        
+                <div id="container" class="search">                    
+                      <div class="t-form">
+                        <img src="https://vignette.wikia.nocookie.net/vsbattles/images/a/a5/Earth_Sub.png/revision/latest?cb=20160310012619"><br>
+                        <input type="text" id="country-name" onfocus="this.value=''" value="Country Name"><br>                        
                         <input type="submit" id="search" value="SEARCH"><br>                        
-                      </form>
+                      </div>
                 </div>
             </main>
     </header>  
-    <section class="t-countries">
-        <div class="">               
-                <div class="output">                        
-                    <ul id="countries">
-                        <li>Search for more info</li>
-                    </ul>
-                </div>
-        </div>
+    <section class="t-countries">             
+            <ul id="countries">
+                <h1 class="t-countries__info">Search for more info</h1>
+            </ul>  
     </section>
+
+    <img src="" alt="">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>   

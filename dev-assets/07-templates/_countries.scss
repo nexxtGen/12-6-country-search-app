@@ -1,3 +1,51 @@
 .t-countries {
+    min-height: 400px;
     color: black;
+    padding: 50px;
+    font-family: $font-montserrat;
+    
+    //background: radial-gradient(ellipse at center, rgba(232,246,255,1) 0%,rgba(182,218,249,1) 100%);
+    //background: linear-gradient(to right, rgba(255,255,255,1) 7%,rgba(255,255,255,1) 7%,rgba(98,162,214,1) 50%,rgba(255,255,255,1) 100%);
+    //background: linear-gradient(to right, rgba(191,229,255,1) -1%,rgba(255,255,255,1) 38%,rgba(255,255,255,1) 63%,rgba(255,255,255,1) 63%,rgba(191,229,255,1) 100%); 
+    //background: linear-gradient(to right, rgba(188,229,255,1) 0%,rgba(242,250,255,1) 50%,rgba(188,229,255,1) 100%);
+    &__info {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    &__container {
+        box-shadow: 2px 2px 5px rgb(88, 88, 88);
+       margin: 15px auto;        
+       padding-top: $gutter *2; 
+       padding-bottom: $gutter *2; 
+       background: rgba($color: #77cdff, $alpha: 0.9)
+    }
+    
+    &__img {
+        max-height: 200px;
+        max-width: 250px;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__header {
+        text-align: center;
+       
+    }
+
+    &__list {
+        border-top: 2px solid #2469ff;
+        margin: 15px;
+    }
+    &__list-name {
+        text-transform: uppercase;
+        font-weight: 600;
+        border-right: 2px solid #2469ff;
+    }
 }
